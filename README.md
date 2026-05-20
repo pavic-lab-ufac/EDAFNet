@@ -97,7 +97,7 @@ The datasets we used are as follows:
 ### Training
 1. Prepare the training dataset.
 2. Modify `'--dataset_dir'` in the `train.py`, which contains the `../data/Kal`, `../data/Hu` and `../data/Tel`.
-3. For different datasets, modify the arguments in `train.py` as follows: 
+3. For different datasets, modify the arguments in `train.py` as follows:
     - For Kalantari's dataset, modify arguments in the `train.py` as follows:
       - `'--test_pat'`: `'Test/Test-set'`
       - `'--ldr_prefix`: `''`
@@ -122,7 +122,7 @@ $ python train.py
 ### Testing
 1. Prepare the testing dataset.
 2. Modify `'--dataset_dir'` in the `test.py`, which contains the `../data/Kal`, `../data/Hu` and `../data/Tel`.
-3. For different datasets, modify the arguments in `test.py` as follows: 
+3. For different datasets, modify the arguments in `test.py` as follows:
     - For Kalantari's dataset, modify arguments in the `test.py` as follows:
       - `'--test_path'`: `'Test/Test-set'`
       - `'--ldr_prefix`: `''`
@@ -154,19 +154,12 @@ $ python test.py
 ## Results
 Pretrained models can be find in the `./pretrain_model` folder.
 
-<!-- ## Citation
-If you find our work useful, please cite it as
-```
-@article{ni2025ssiu,
-  title={Structural Similarity-Inspired Unfolding for Lightweight Image Super-Resolution},
-	author={Ni, Zhangkai, and Zhang, Yang, and Yang, Wenhan, and Wang, Hanli, and Wang, Shiqi and Kwong, Sam},
-	journal={IEEE Transactions on Image Processing},
-	volume={},
-	pages={},
-	year={2025},
-	publisher={IEEE}
-}
-``` -->
+## Evaluation
+
+Metrics used: **SSIM-m**, **SSIM-l**, **HDR-VDP2**, and **PU21**.
+
+The evaluation scripts were adapted from [SAFNet](https://github.com/ltkong218/SAFNet) (SSIM-m, SSIM-l and HDR-VDP2) and [SCTNet](https://github.com/Zongwei97/SCTNet) (PU21).
+
 
 
 ## Acknowledgments
